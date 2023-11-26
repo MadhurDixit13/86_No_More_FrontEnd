@@ -47,57 +47,57 @@ being beneficial to the planet as there will be less waste generated in the rest
 
 ## 🚅 Demo:
 ### Our Home Page
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/Home_Page.png)
+![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/Home_Page.png)
 
 
 
 ### Every Restaurant will create an account with our application through the sign-up page and login
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/Register.png)
+![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/Register.png)
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/Login.png)
+![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/Login.png)
 
 
 ### After signing up, the user can view the menu and see the currently available dishes
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/After_Login.png)
+![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/After_Login.png)
 
 ### Menu
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/Menu.png)
+![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/Menu.png)
 
 ### Add Inventory
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/Inventory.png)
+![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/Inventory.png)
 
 ### View Inventory
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/ViewInventory.png)
+![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/ViewInventory.png)
 
 ### Place Order
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/Order.png)
+![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/Order.png)
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/2Order.png)
+![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/2Order.png)
 
 ### Add Menu
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/AddItemsMenu.png)
+![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/AddItemsMenu.png)
 
 ### Watch quantity being reduced
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/ReducedItems.png)
+![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/ReducedItems.png)
 
 ### Menu Item analytics
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/RawMaterialAnalytics.png)
+![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/RawMaterialAnalytics.png)
 
 ### Raw material analytics
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/2RawMaterialAnalysis.png)
+![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/2RawMaterialAnalysis.png)
 
 ### Profile Page
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/Profile.png)
+![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/Profile.png)
 
 
 

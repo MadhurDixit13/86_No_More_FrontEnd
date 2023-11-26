@@ -47,67 +47,57 @@ being beneficial to the planet as there will be less waste generated in the rest
 
 ## 🚅 Demo:
 ### Our Home Page
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/02f4c5ef-6b7f-4bf8-808e-2f94ba911baf)
+![image](https://drive.google.com/file/d/1_-FTm_yud5e702hEroaZjmsm1xv4UaC7/view?usp=sharing)
 
 
 
 ### Every Restaurant will create an account with our application through the sign-up page and login
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/755fecb4-cab9-483a-8807-c52f56823cc2)
+![image](https://drive.google.com/file/d/1InLP3EKtvS9GQla28K3MIko8pDM1sDBd/view?usp=sharing)
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/a9b7ee5a-05c5-4632-93e1-d9c6d0493c66)
+![image](https://drive.google.com/file/d/1u0NycFfTAY3e8w3xAC_d5LpFJgkPc6Jw/view?usp=drive_link)
 
 
 ### After signing up, the user can view the menu and see the currently available dishes
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/6241179f-c6be-4488-a1c5-357c9f91e509)
+![image](https://drive.google.com/file/d/14BURTo3epDzM-WltJA8asfYri7ug0Gap/view?usp=drive_link)
 
-### Add Menu
+### Menu
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/5fa2f824-4366-41eb-8cc4-0f177b7c402f)
+![image](https://drive.google.com/file/d/1JWAhffzFlAGeSvuC94JAvi9U5ZTPu55i/view?usp=drive_link)
 
 ### Add Inventory
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/2f00d754-6870-4e95-87b4-0b8613ae2a61)
+![image](https://drive.google.com/file/d/1_4VafkXi7GQ3zlItkyu5e6c386nLjG7z/view?usp=drive_link)
 
 ### View Inventory
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/5a4823f3-820e-4057-8648-1536840576de)
-
-### Add Items in Menu
-
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/37821df1-977d-4202-99ad-ac3d80e40df0)
-
-### Add Menu
-
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/9368f477-74d1-4213-ba1d-0fc8688fc031)
+![image](https://drive.google.com/file/d/1O-3QOzlku9lnj_OxokbxxoCep41tkxop/view?usp=drive_link)
 
 ### Place Order
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/d464e6ca-5e8b-420a-9daf-5f4a7af235c5)
+![image](https://drive.google.com/file/d/1h2q2ThtV7daREqvp11p9BQYernqupteF/view?usp=drive_link)
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/c6820d40-876a-4e71-b844-337b8936698c)
+![image](https://drive.google.com/file/d/13g91-5UymV69koFW7Fp-aNCcRb4LrXJ8/view?usp=drive_link)
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/952c1d01-50cd-440b-98d2-dd35b6b0ea43)
+### Add Menu
+
+![image](https://drive.google.com/file/d/1EK_IxXR4mobxTw50cDM1sOKyb2y9zAYW/view?usp=drive_link)
 
 ### Watch quantity being reduced
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/03bf4c46-18f1-4525-a288-36394460218a)
+![image](https://drive.google.com/file/d/11-Fe0FvgabTrcW-dZKV743LHQG47oOa-/view?usp=drive_link)
 
 ### Menu Item analytics
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/76387c5e-7795-4d02-8339-116302a8a0f4)
-
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/c9daebbe-53e5-4908-9434-221b28a62cf8)
+![image](https://drive.google.com/file/d/1TIi9rJX3ZZ4eF0Zm0Gml1LWxfb4h9q8a/view?usp=drive_link)
 
 ### Raw material analytics
 
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/7abb36cf-f41d-4167-9e3d-b813115729b3)
-
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/edcad4a3-42f4-4bcb-ab85-963a55c9117c)
+![image](https://drive.google.com/file/d/1Lxg56CIViVatPfavy7sOR1ZY4TDZwwNj/view?usp=drive_link)
 
 ### Profile Page
-![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/assets/85347670/1a6c17f5-adeb-433c-9615-620079360a49)
+![image](https://drive.google.com/file/d/1WBkwpgSlAL2gEa2T3h9rzCVgygPAOzT7/view?usp=drive_link)
 
 
 
@@ -216,16 +206,16 @@ See RoadMap here: [RoadMap](https://github.com/MadhurDixit13/86_No_More_FrontEnd
 
 ## Troubleshooting
 
-If you encounter any issues during the installation process, feel free to reach out to our contact our support team at [86.no.more.help@gmail.com](mailto:86.no.more.help@gmail.com).
+If you encounter any issues during the installation process, feel free to reach out to our contact our support team at [csc520group19@gmail.com](mailto:csc520group19@gmail.com).
 
 
 # Contributors
   <table>
   <tr>
-    <td align="center"><a href="https://github.com/MadhurDixit13"><img src="https://avatars.githubusercontent.com/u/54364517?v=4" width="100px;" alt=""/><br /><sub><b>Madhur Dixit</b></sub></a></td>
-    <td align="center"><a href="https://github.com/ATHARVA47"><img src="https://avatars.githubusercontent.com/u/57554284?v=4" width="100px;" alt=""/><br /><sub><b>Atharv Kale</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/Kohav-Yadav"><img src="https://avatars.githubusercontent.com/u/59785863?v=4" width="100px;" alt=""/><br /><sub><b>Kohav Yadav</b></sub></a><br /></td>
-    <td align="center"><a href="https://github.com/Tanvi0701"><img src="https://avatars.githubusercontent.com/u/85347670?v=4" width="100px;" alt=""/><br /><sub><b>Tanvi Raut</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/MadhurDixit13"><img src="https://avatars.githubusercontent.com/u/64360720?v=4" width="100px;" alt=""/><br /><sub><b>Madhur Dixit</b></sub></a></td>
+    <td align="center"><a href="https://github.com/ATHARVA47"><img src="https://avatars.githubusercontent.com/u/75237232?v=4" width="100px;" alt=""/><br /><sub><b>Atharv Kale</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Kohav-Yadav"><img src="https://avatars.githubusercontent.com/u/71562521?v=4" width="100px;" alt=""/><br /><sub><b>Kohav Yadav</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Tanvi0701"><img src="https://avatars.githubusercontent.com/u/94620639?v=4" width="100px;" alt=""/><br /><sub><b>Tanvi Raut</b></sub></a><br /></td>
   </tr>
 </table>
 

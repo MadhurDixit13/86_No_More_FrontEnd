@@ -16,7 +16,7 @@ Video Link: https://drive.google.com/file/d/14tvrl4LfxWW0VsE-N8iKk8NzE6SDp5Ua/vi
 [![language_count](https://img.shields.io/github/languages/count/MadhurDixit13/86_No_More_FrontEnd)](https://GitHub.com/MadhurDixit13/86_No_More_FrontEnd/)
 [![Top Language](https://img.shields.io/github/languages/top/MadhurDixit13/86_No_More_FrontEnd)](https://GitHub.com/MadhurDixit13/86_No_More_FrontEnd/)
 [![Version](https://img.shields.io/github/package-json/v/MadhurDixit13/86_No_More_FrontEnd)](https://GitHub.com/MadhurDixit13/86_No_More_FrontEnd/)
-![Build Status](https://github.com/MadhurDixit13/86_No_More_FrontEnd/workflows/npm-build/badge.svg)
+[![Node.js CI with React](https://github.com/MadhurDixit13/86_No_More_FrontEnd/actions/workflows/main.yml/badge.svg)](https://github.com/MadhurDixit13/86_No_More_FrontEnd/actions/workflows/main.yml)
 [![codecov](https://codecov.io/gh/MadhurDixit13/86_No_More_FrontEnd/graph/badge.svg)](https://codecov.io/gh/MadhurDixit13/86_No_More_FrontEnd)
 <!--[![codecov](https://codecov.io/gh/ashakhatri007/CSC510_Group25_Project1/branch/main/graph/badge.svg?token=JAUQCX59SH)](https://codecov.io/gh/ashakhatri007/CSC510_Group25_Project1)-->
 ![Logo](https://user-images.githubusercontent.com/89487138/144724853-bd0d6f22-1a44-4dc3-afc4-6270b2bd3f36.jpg)

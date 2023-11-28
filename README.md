@@ -49,7 +49,7 @@ being beneficial to the planet as there will be less waste generated in the rest
 
 
 
-### Every Restaurant will create an account with our application through the sign-up page and login
+### Every Restaurant will create an account with our application through the sign-up page and login.
 
 ![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/Register.png)
 

@@ -90,23 +90,15 @@ class Update extends Component {
       const {job} = this.props;
         
       
-        return (
-            <div>
-             
-
-        <div style={{width:'650px',height:'fit-content',marginLeft:'23%'}}>
-        {job.map((job) => (
-          <>
-            <Job job={job} />
-          </>
-        ))}
-        </div>
-        
-        
-        </div>
-        
-           
-        );
+      return (
+        <div style={{width:'100%', display:'flex', justifyContent: 'center'}}>
+          {job.map((job) => (
+            <>
+              <Job job={job} />
+            </>
+          ))}
+        </div>       
+      );
     }
 }
 

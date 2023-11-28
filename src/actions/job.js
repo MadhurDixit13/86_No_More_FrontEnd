@@ -58,7 +58,7 @@ export function createJob(
   
 
   export function createMenu(
-    menuname,ingredients,costmenu
+    menuname,category,ingredients,costmenu
   ) {
     return (dispatch) => {
       
@@ -73,6 +73,7 @@ export function createJob(
         },
         body: JSON.stringify({
           menuname,
+          category,
           ingredients,
           costmenu
         }),
@@ -94,12 +95,11 @@ export function createJob(
   }
   
   export function createOrder(
-    items
+    items, Ordercost
   ) {
     return (dispatch) => {
       
       const url = APIURLS.order();
-
       const token = localStorage.getItem('token');
       fetch(url, {
         method: "POST",
@@ -108,7 +108,7 @@ export function createJob(
           'Authorization': `Bearer ${token}`
         },
         body: JSON.stringify({
-          items
+          items, Ordercost
         }),
       })
         .then((response) => response.json())
@@ -127,8 +127,6 @@ export function createJob(
     };
   }
 
-
-
   export function jobSuccess(job) {
     return {
       type: ADD_JOB,
@@ -142,8 +140,6 @@ export function createJob(
       menu,
     };
   }
-
-  
 
   export function orderSuccess(order) {
     return {
@@ -258,8 +254,6 @@ export function createJob(
         });
     };
   }
-  
-
 
 export function updateJobs(jobs) {
     return {

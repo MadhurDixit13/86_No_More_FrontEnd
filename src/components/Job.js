@@ -2,54 +2,42 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { createApplication , closeJob} from '../actions/job';
 
-class Job extends Component {
-    
-    
-
-      
-    
+class Job extends Component {  
     render() {
         const { job } = this.props;
         const {user} = this.props.auth;
         console.log('lalallaalaxxxx', job, user)
 
         return (
-          
-            <div className="post" key={job._id} style={{width:'50vw',marginLeft:'50px'}}>
-              {user._id == job.restid? 
+          <div className="post" key={job._id} style={{width:'45%', margin: '2.5% 1.25%'}}>
+            {user._id == job.restid? 
             <div className="post-header">
-              
-
-
-
-                  <div >
+                
+              <div>
                 <h4 style={{display:'inline-block',marginTop:'-12px'}}>Item : </h4> 
                 <span style={{marginLeft:'10px'}}>{job.itemname}</span>
-                  </div>
+              </div>
 
-                  <div >
-                    
+              <div>
                 <h4 style={{display:'inline-block',marginTop:'-12px'}}>Cost Per Item : </h4> 
                 <span style={{marginLeft:'10px'}}>{job.costperitem}</span>
-                  </div>
+              </div>
 
-                  <div >
+              <div >
                 <h4 style={{display:'inline-block',marginTop:'-12px'}}>Expiration Date : </h4> 
                 <span style={{marginLeft:'10px'}}>{new Date(job.dateexpired).toLocaleDateString('en-us',{ weekday: 'long', year: 'numeric', month: 'short', day: 'numeric' })}</span>
-                  </div>
+              </div>
 
-                  <div >
+              <div >
                 <h4 style={{display:'inline-block',marginTop:'-12px'}}>Date Bought : </h4> 
                 <span style={{marginLeft:'10px'}}>{new Date(job.datebought).toLocaleDateString('en-us',{ weekday: 'long', year: 'numeric', month: 'short', day: 'numeric'})}</span>
-                  </div>
-                  <div >
+              </div>
+              
+              <div >
                 <h4 style={{display:'inline-block',marginTop:'-12px'}}>Quantity : </h4> 
                 <span style={{marginLeft:'10px'}}>{job.quantity}</span>
-                  </div> 
-                
-                
-              
-            
+              </div>   
+
             </div> : []}
           </div>
         );

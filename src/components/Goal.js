@@ -128,19 +128,22 @@ class Goal extends Component {
 
     
     
-    render() {
-       
-      const {error} = this.props.auth;
-      const {user} = this.props.auth;
-      const {job} = this.props;
-        
-        return (
-            <div>
-              
-           <form className="goal-form" style={{width:'600px',height:'600px',marginLeft:'31.5%'}} onSubmit={this.handleSave}  ref={this.createForm}>
-           <span className="login-signup-header" style={{margin:"20px 0px"}}>Add Inventory</span>
+  render() {
+      
+    const {error} = this.props.auth;
+    const {user} = this.props.auth;
+    const {job} = this.props;
+      
+    return (
+      <table  style={{width:'100%', padding: '3.5%'}}>
+        <row class="inventory-row" style={{ display: 'flex', width: '100%'}}> 
+
+          <form className="goal-form" style={{width:'45%',height:'fit-content', margin:'10px'}} onSubmit={this.handleSave}  ref={this.createForm}>
+            <span className="login-signup-header" style={{margin:"20px 0px"}}>
+              Add Inventory
+            </span>
+
             {error && <div className="alert error-dailog">{error}</div>}
-            
 
             <div className="field">
               <label>Item Name</label>
@@ -152,84 +155,70 @@ class Goal extends Component {
               />
             </div>
 
-        <div className="field">
-          <label>Item Quantity</label>
-          <input
-            placeholder="Quantity"
-            type="number"
-            required
-            min="1"
-            onChange={(e) => this.handleInputChange('quantity', e.target.value)}
-          />
-        </div>
-
-        <div className="field">
-          <label>Item Cost</label>
-          <input
-            placeholder="Cost per item"
-            type="number"
-            required
-            min="1"
-            onChange={(e) => this.handleInputChange('costperitem', e.target.value)}
-          />
-        </div>
-        <div className="field">
-          <label>Item Bought</label>
-          <input
-            placeholder="Date Bought"
-            type="date"
-            required
-            onChange={(e) => this.handleInputChange('datebought', e.target.value)}
-          />
-        </div>
-
-        <div className="field">
-          <label>Item Expiration</label>
-          <input
-            placeholder="Expiration Date"
-            type="date"
-            required
-            onChange={(e) => this.handleInputChange('dateexpired', e.target.value)}
-          />
-        </div>
-
-        
-        
-        <div className="field">
-          <button className="button save-btn" type="submit">Add Item</button>
-        </div>
-        
-        
-
-        </form>
-
-         
-        <form className="goal-form" style={{width:'600px',height:'fit-content',marginLeft:'31.5%'}} onSubmit={this.handleSave1} ref={this.updateForm}>
-           <span className="login-signup-header" style={{margin:"20px 0px"}}>Update Item</span>
-            {error && <div className="alert error-dailog">{error}</div>}
-            
-            
-
             <div className="field">
-              <label>Select Inventory Item</label>
-              <select onChange={(e) => {
-                this.handleInputChange('itemname_id', e.target.value)}
-              }>
-                <option value="">Select Item</option>
-                {job.length>0 && job.map((jb) => (
-                  <option value={jb._id}>{jb.itemname}</option>
-                ))}
-              </select>
-              {/* <input
-                placeholder="Item Name"
-                type="text"
+              <label>Item Quantity</label>
+              <input
+                placeholder="Quantity"
+                type="number"
                 required
-                onChange={(e) => this.handleInputChange('itemname', e.target.value)}
-              /> */}
+                min="1"
+                onChange={(e) => this.handleInputChange('quantity', e.target.value)}
+              />
             </div>
 
-            {
-              this.state.itemname_id && (
+            <div className="field">
+              <label>Item Cost</label>
+              <input
+                placeholder="Cost per item"
+                type="number"
+                required
+                min="1"
+                onChange={(e) => this.handleInputChange('costperitem', e.target.value)}
+              />  
+            </div>
+
+            <div className="field">
+              <label>Item Bought</label>
+              <input
+                placeholder="Date Bought"
+                type="date"
+                required
+                onChange={(e) => this.handleInputChange('datebought', e.target.value)}
+              />
+            </div>
+
+            <div className="field">
+              <label>Item Expiration</label>
+              <input
+                placeholder="Expiration Date"
+                type="date"
+                required
+                onChange={(e) => this.handleInputChange('dateexpired', e.target.value)}
+              />
+            </div>
+
+            <div className="field">
+              <button className="button save-btn" type="submit">Add Item</button>
+            </div>
+
+          </form>
+
+          <form className="goal-form" style={{width:'45%',height:'fit-content', margin:'10px'}} onSubmit={this.handleSave1} ref={this.updateForm}>
+            <span className="login-signup-header" style={{margin:"20px 0px"}}>Update Item</span>
+            {error && <div className="alert error-dailog">{error}</div>}
+            
+            <div className="field">
+              <label>Select Inventory Item</label> 
+              <select onChange={(e) => {
+                this.handleInputChange('itemname_id', e.target.value)}}>      
+              <option value="">Select Item</option>
+              {job.length>0 && job.map((jb) => (
+                <option value={jb._id}>{jb.itemname}</option>
+              ))}
+              </select>
+            </div>
+
+            {this.state.itemname_id && (
                 <div className="field">
                   <label>Current Quantity</label>
                   <input
@@ -245,67 +234,59 @@ class Goal extends Component {
               )
             }
 
-        <div className="field">
-          <label>Added Quantity</label>
-          <input
-            placeholder="Quantity"
-            type="number"
-            required
-            onChange={(e) => this.handleInputChange('quantity', e.target.value)}
-            style={{marginBottom:"0px"}}
-          />
-          <div style={{color:"#a1a197",fontSize:"14px",marginBottom:"20px"}}>If you want to Decrement Quantity add it with '-'. for eg:-2</div>
-        </div>
+            <div className="field">
+              <label>Added Quantity</label>
+              <input
+                placeholder="Quantity"
+                type="number"
+                required
+                onChange={(e) => this.handleInputChange('quantity', e.target.value)}
+                style={{marginBottom:"0px"}}
+              />
+              <div style={{color:"#a1a197",fontSize:"14px",marginBottom:"20px"}}>If you want to Decrement Quantity add it with '-'. for eg:-2</div>
+            </div>
 
-        <div className="field">
-          <label>Item Cost</label>
-          <input
-            placeholder="Cost per item"
-            type="number"
-            required
-            min = "1"
-            onChange={(e) => this.handleInputChange('costperitem', e.target.value)}
-          />
-        </div>
+            <div className="field">
+              <label>Item Cost</label>
+              <input
+                placeholder="Cost per item"
+                type="number"
+                required
+                min = "1"
+                onChange={(e) => this.handleInputChange('costperitem', e.target.value)}
+              />
+            </div>
 
-        <div className="field">
-          <label>Item Bought</label>
-          <input
-            placeholder="Date Bought"
-            type="date"
-            required
-            onChange={(e) => this.handleInputChange('datebought', e.target.value)}
-          />
-        </div>
+            <div className="field">
+              <label>Item Bought</label>
+              <input
+                placeholder="Date Bought"
+                type="date"
+                required
+                onChange={(e) => this.handleInputChange('datebought', e.target.value)}
+              />
+            </div>
 
-        <div className="field">
-          <label>Item Expiration</label>
-          <input
-            placeholder="Expiration Date"
-            type="date"
-            required
-            onChange={(e) => this.handleInputChange('dateexpired', e.target.value)}
-          />
-        </div>
-   
-        
-        <div className="field">
-        <button className="button save-btn" type="submit">Save</button>
-        </div>
-        
-        
+            <div className="field">
+              <label>Item Expiration</label>
+              <input
+                placeholder="Expiration Date"
+                type="date"
+                required
+                onChange={(e) => this.handleInputChange('dateexpired', e.target.value)}
+              />
+            </div>
+  
+            <div className="field">
+            <button className="button save-btn" type="submit">Save</button>
+            </div>
 
-        </form>
-        
-        
-        
-               
-        
-        </div>
-        
-           
-        );
-    }
+          </form> 
+
+        </row>
+      </table>
+    );
+  }
 }
 
 

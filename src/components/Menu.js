@@ -2,91 +2,87 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import { searchUsers } from '../actions/search';
-import {clearAuthState,editItem} from '../actions/auth';
-import {clearsearchstate} from '../actions/search';
+import { clearAuthState, editItem } from '../actions/auth';
+import { clearsearchstate } from '../actions/search';
 
 
 
 import Widgets from './Widgets.js';
-import {createJob, fetchMenus} from '../actions/job';
-import { fetchJobs,createMenu} from '../actions/job';
+import { createJob, fetchMenus } from '../actions/job';
+import { fetchJobs, createMenu } from '../actions/job';
 import Job1 from './Job1';
 import { toast } from 'react-toastify';
+import { Flare, Rowing } from '@material-ui/icons';
 
 
 class Menu extends Component {
-    constructor(props) {
-        super(props);
-    
-        this.state = {
-          restname:'',
-          restid: '',
-          menuname:'',
-          quantity:'0',
-          costmenu:'',
-          ingredients: [{ inventory_id: '', quantity: '' }],
-          editMode: false,
-        };
+  constructor(props) {
+    super(props);
 
-        this.formRef = React.createRef(null)
-      }
-    
+    this.state = {
+      restname: '',
+      restid: '',
+      menuname: '',
+      category: '',
+      quantity: '0',
+      costmenu: '',
+      ingredients: [{ inventory_id: '', quantity: '' }],
+      editMode: false,
+    };
 
-    handleSearch = (e) => {
-        const searchText = e.target.value;
-        console.log(searchText)
-         
-        this.props.dispatch(searchUsers(searchText));
-        
-      };
-      
-    
-   
+    this.formRef = React.createRef(null)
+  }
 
-    clearSearch = () => {
-        this.props.dispatch(clearsearchstate([]))
-        console.log("UNMOUNT")
+  handleSearch = (e) => {
+    const searchText = e.target.value;
+    console.log(searchText)
 
+    this.props.dispatch(searchUsers(searchText));
+
+  };
+
+  clearSearch = () => {
+    this.props.dispatch(clearsearchstate([]))
+    console.log("UNMOUNT")
+
+  }
+
+  handleInputChange = (fieldName, val) => {
+
+    this.setState({
+      [fieldName]: val
+    })
+  }
+
+  addMoreIngredient = () => {
+    if (this.state.ingredients.length === this.props.job.length) {
+      toast.error("No more Ingredients Left to Add")
+      return
     }
+    this.setState((prevState) => ({
+      ingredients: [...prevState.ingredients, { inventory_id: '', quantity: '' }],
+    }));
+  }
 
-    handleInputChange = (fieldName,val) => {
 
-        this.setState({
-            [fieldName]: val
-        })
-
-        
-    
-      }
-
-      addMoreIngredient = () => {
-        if(this.state.ingredients.length === this.props.job.length){
-          toast.error("No more Ingredients Left to Add")
-          return
-        }
-        this.setState((prevState) => ({
-          ingredients: [...prevState.ingredients, { inventory_id: '', quantity: '' }],
-        }));
-      }
-
-    
   handleSave = (e) => {
     e.preventDefault()
 
-    const {menuname,ingredients,costmenu} = this.state;
+    const { menuname, category, ingredients, costmenu } = this.state;
 
-    const {user} = this.props.auth;
+    const { user } = this.props.auth;
 
-    this.props.dispatch(createMenu(menuname,ingredients,costmenu))
+    this.props.dispatch(createMenu(menuname, category, ingredients, costmenu))
 
     this.formRef.current.reset()
 
     this.setState({
-      restname:'',
+      restname: '',
       restid: '',
-      menuname:'',
-      quantity:'0',
-      costmenu:'',
+      menuname: '',
+      category: '',
+      quantity: '0',
+      costmenu: '',
       ingredients: [{ inventory_id: '', quantity: '' }],
       editMode: false,
     })
@@ -99,133 +95,169 @@ class Menu extends Component {
   }
 
 
-    
-    
-    render() {
-       
-      const {error} = this.props.auth;
-      
-      const {menu} = this.props;
-      const {job} = this.props;
 
-      const {ingredients} = this.state
-        
-      
-        return (
-            <div>
+
+  render() {
+    const { error } = this.props.auth;
+    const { menu } = this.props;
+    const { job } = this.props;
+    const { ingredients } = this.state
+
+    return (
+      <table  style={{width:'100%', padding: '3.5%'}}>
+        <row style={{ display: 'flex', width: '100%'}}>
+
+          <form className="goal-form" style={{ width: '45%', height: 'fit-content' }} onSubmit={this.handleSave} ref={this.formRef}>   
               
-           <form className="goal-form" style={{width:'650px',height:'fit-content',marginLeft:'30%'}} onSubmit={this.handleSave} ref={this.formRef}>
-           <span className="login-signup-header" style={{margin:"20px 0px"}}>Add Menu Item</span>
-            {error && <div className="alert error-dailog">{error}</div>}
-            
-            
+              <span className="login-signup-header" style={{ margin: "20px 0px" }}>
+                Add Menu Item
+              </span>
+              
+              {error && <div className="alert error-dailog">{error}</div>}
 
-            <div className="field">
-              <label>Menu Item Name</label>
-              <input
-                placeholder="Item Name"
-                type="text"
-                required
-                onChange={(e) => this.handleInputChange('menuname', e.target.value)}
-              />
-            </div>
+              <div className="field">
+                <label>
+                  Menu Item Name
+                </label>
 
-          <div className="field">
-            <label>Item Price</label>
-            <input
-              placeholder="Price"
-              type="text"
-              required
-              onChange={(e) => this.handleInputChange('costmenu', e.target.value)}
-            />
-          </div>
+                <input
+                  placeholder="Item Name"
+                  type="text"
+                  required
+                  onChange={(e) => this.handleInputChange('menuname', e.target.value)}
+                />
+              </div>
 
-          <span className='login-signup-header' style={{fontSize:"22px",marginBottom:"20px"}}>Ingredient Used</span>
+              <div className="field">
+                <label>
+                  Category
+                </label>
+              
+                <select onChange={(e) => this.handleInputChange('category', e.target.value)}>
+                  <option value="">Select Category</option>
+                  <option value="Starter">Starters</option>
+                  <option value="Main Course">Main Course</option>
+                  <option value="Beverages">Beverages</option>
+                  <option value="Dessert">Desserts</option>
+                </select>
 
-          <div className='ingredient_used_container' style={{width:"100%"}}>
-              {
-                ingredients.map((ingredient,index)=>{
-                  return(
-                    <div className='ingredient_used'>
-                      <div key={index} className='field'>
-                        <label>Ingredient Name</label>
-                        <select onChange={(e) => {
-                          const newIngredients = [...this.state.ingredients];
-                          newIngredients[index].inventory_id = e.target.value;
-                          this.setState({ ingredients: newIngredients });  
-                        }
-                        }>
-                          <option value="">Select Item</option>
-                          {job.length>0 && job.map((jb) => {
-                            return (
-                              <option value={jb._id} disabled={this.state.ingredients.findIndex((ing)=>ing.inventory_id===jb._id)>-1?true:false}>{jb.itemname}</option>
-                            )
-                          })}
-                        </select>
-                        </div>
+              </div>
+
+              <div className="field">
+                <label>
+                  Item Price
+                </label>
+
+                <input
+                  placeholder="Price"
+                  type="text"
+                  required
+                  onChange={(e) => this.handleInputChange('costmenu', e.target.value)}
+                />
+              </div>
+
+              <span className='login-signup-header' style={{ fontSize: "22px", marginBottom: "20px" }}>
+                Ingredient Used
+              </span>
+
+              <div className='ingredient_used_container' style={{ width: "100%" }}>
+                {
+                  ingredients.map((ingredient, index) => {
+                    return (
+                      <div className='ingredient_used'>
                         <div key={index} className='field'>
-                        <label>Quantity</label>
-                        <input
-                          placeholder="Quantity"
-                          type="number"
-                          required
-                          min="1"
-                          onChange={(e) => {
+                          <label>
+                            Ingredient Name
+                          </label>
+
+                          <select onChange={(e) => {
                             const newIngredients = [...this.state.ingredients];
-                            newIngredients[index].quantity = e.target.value;
+                            newIngredients[index].inventory_id = e.target.value;
                             this.setState({ ingredients: newIngredients });
-                          }}
-                        />
+                            }
+                          }>
+
+                          <option value="">
+                            Select Item
+                          </option>
+
+                          {
+                            job.length > 0 && job.map((jb) => {
+                              return (
+                                <option value={jb._id} disabled={this.state.ingredients.findIndex((ing) => ing.inventory_id === jb._id) > -1 ? true : false}>{jb.itemname}</option>
+                              )
+                            })
+                          }
+                        </select>
+
+                        </div>
+
+                        <div key={index} className='field'>
+                          <label>
+                            Quantity
+                          </label>
+
+                          <input
+                            placeholder="Quantity"
+                            type="number"
+                            required
+                            min="1"
+                            onChange={(e) => {
+                              const newIngredients = [...this.state.ingredients];
+                              newIngredients[index].quantity = e.target.value;
+                              this.setState({ ingredients: newIngredients });
+                            }}
+                          />
+                        </div>
+
                       </div>
-                    </div>
-                  )
-                })
-              }
-              
-            
+                    )
+                  })
+                }
+              </div>
+
+              <div className="field">
+                
+                <button onClick={this.addMoreIngredient} className='button save-btn' type="button" style={{ width: "30%", fontSize: '16px', borderRadius: "8px" }}>
+                  Add More Ingredient
+                </button>
+
+              </div>
+
+              <div className="field">
+
+                <button className="button save-btn" type="submit" >
+                  Save
+                </button>
+
+              </div>
+          </form>
+                
+          <div style={{ width: '55%', height:'fit-content', marginLeft:'15px', display:'flex'}}>
+            {
+              menu.map((menu) => (
+                <Job1 menu={menu} />
+              ))
+            }
           </div>
-          <div className="field">
-           <button onClick={this.addMoreIngredient} className='button save-btn' type="button" style={{width: "30%",fontSize: '16px',borderRadius: "8px"}}>Add More Ingredient</button>
-          </div>
 
-
-        
-       
-        
-        <div className="field">
-        <button className="button save-btn" type="submit" >Save</button>
-        </div>
-        
-        
-        
-
-        </form>
-
-         
-              <div style={{marginLeft:'23.5%',width:'650px'}}>
-        {menu.map((menu) => (
-          <Job1 menu={menu} />
-        ))}
-        </div>  
-        
-        </div>
-        
-           
-        );
-    }
+        </row>
+      </table>
+    );
+  }
 }
 
 
 
 function mapStateToProps(state) {
-    return {
-      auth: state.auth,
-      results: state.search.results,
-      job:state.job,
-      menu:state.menu,
-    };
-  }
-  
-  export default connect(mapStateToProps)(Menu);
+  return {
+    auth: state.auth,
+    results: state.search.results,
+    job: state.job,
+    menu: state.menu,
+  };
+}
+
+export default connect(mapStateToProps)(Menu);
 
 

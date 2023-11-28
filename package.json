@@ -40,7 +40,7 @@
   "scripts": {
     "test-coverage": "react-scripts test — env=jsdom — coverage -u",
     "start": "react-scripts start",
-    "build": "react-scripts build --no-error-on-unmatched-pattern"",
+    "build": "react-scripts build --no-error-on-unmatched-pattern",
     "test": "react-scripts test --env=jsdom",
     "coverage": "react-scripts test --env=jsdom --watchAll=false --coverage",
     "eject": "react-scripts eject"

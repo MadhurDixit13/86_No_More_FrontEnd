@@ -17,13 +17,10 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '14'  # Change this to your Node.js version
+        node-version: '16'  # Change this to your Node.js version
 
     - name: Install dependencies
       run: npm install
-
-    - name: Build React app
-      run: npm run build
       
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v3

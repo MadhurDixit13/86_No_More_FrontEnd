@@ -3,7 +3,7 @@ Video Link: https://drive.google.com/file/d/14tvrl4LfxWW0VsE-N8iKk8NzE6SDp5Ua/vi
 
 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10023690.svg)](https://doi.org/10.5281/zenodo.10023690)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10212056.svg)](https://doi.org/10.5281/zenodo.10212056)
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 [![Build Status](https://app.travis-ci.com/MadhurDixit13/86_No_More_FrontEnd.svg?branch=main)](https://app.travis-ci.com/MadhurDixit13/86_No_More_FrontEnd)

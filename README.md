@@ -11,7 +11,8 @@ Video Link: https://drive.google.com/file/d/14tvrl4LfxWW0VsE-N8iKk8NzE6SDp5Ua/vi
 [![Issues](https://img.shields.io/github/issues/MadhurDixit13/86_No_More_FrontEnd)](https://GitHub.com/MadhurDixit13/86_No_More_FrontEnd/)
 [![Issues Closed](https://img.shields.io/github/issues-closed/MadhurDixit13/86_No_More_FrontEnd)](https://GitHub.com/MadhurDixit13/86_No_More_FrontEnd/)
 ![last commit](https://img.shields.io/github/last-commit/MadhurDixit13/86_No_More_FrontEnd)
-![Lines of Code](https://img.shields.io/tokei/lines/github/MadhurDixit13/86_No_More_FrontEnd)
+<!-- ![Lines of Code](https://img.shields.io/tokei/lines/github/MadhurDixit13/86_No_More_FrontEnd) -->
+![Lines of Code](https://badgen.net/tokei/lines/github/MadhurDixit13/86_No_More_FrontEnd)
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/MadhurDixit13/86_No_More_FrontEnd/main)[![Repo-size](https://img.shields.io/github/repo-size/MadhurDixit13/86_No_More_FrontEnd)](https://GitHub.com/MadhurDixit13/86_No_More_FrontEnd/)
 [![file_count](https://img.shields.io/github/directory-file-count/MadhurDixit13/86_No_More_FrontEnd)](https://GitHub.com/MadhurDixit13/86_No_More_FrontEnd/)
 [![language_count](https://img.shields.io/github/languages/count/MadhurDixit13/86_No_More_FrontEnd)](https://GitHub.com/MadhurDixit13/86_No_More_FrontEnd/)

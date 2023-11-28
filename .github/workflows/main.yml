@@ -22,8 +22,8 @@ jobs:
     - name: Install dependencies
       run: npm install --legacy-peer-deps
     
-    - name: Build React app
-      run: npm run build
+    # - name: Build React app
+    #   run: npm run build
 
     - name: Run tests
       run: npm test

@@ -20,7 +20,7 @@ jobs:
         node-version: '16'  # Change this to your Node.js version
 
     - name: Install dependencies
-      run: npm install
+      run: npm install --legacy-peer-deps
       
     - name: Upload coverage reports to Codecov
       uses: codecov/codecov-action@v3

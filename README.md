@@ -1,4 +1,4 @@
-Video Link: https://drive.google.com/file/d/14tvrl4LfxWW0VsE-N8iKk8NzE6SDp5Ua/view?usp=sharing
+Video Link: https://youtu.be/qsJeqrlfdyk
 # 86 No More, A Kitchen Intelligence Solution
 
 
@@ -194,6 +194,9 @@ npm start
  ### [Backend Test Cases Guide](https://github.com/MadhurDixit13/86_No_More_BackEnd/blob/main/docs/backend_testing.md)
  
 
+## Where to find Rubrics
+Rubrics and the video can be found in Project 3 folder in root directory
+[Rubrics](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/Project3/rubrics.md)
 
 ## Funding:
 The project is not currently funded

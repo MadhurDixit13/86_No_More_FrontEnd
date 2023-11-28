@@ -8,15 +8,15 @@ Video Link: https://drive.google.com/file/d/14tvrl4LfxWW0VsE-N8iKk8NzE6SDp5Ua/vi
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 [![Build Status](https://app.travis-ci.com/shantanu109/CSC510_Group25_Project1.svg?branch=main)](https://app.travis-ci.com/shantanu109/CSC510_Group25_Project1)
 [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
-[![Issues](https://img.shields.io/github/issues/drs1951/CSC510_Group31)](https://GitHub.com/drs1951/CSC510_Group31/)
-[![Issues Closed](https://img.shields.io/github/issues-closed/drs1951/CSC510_Group31)](https://GitHub.com/drs1951/CSC510_Group31/)
-![last commit](https://img.shields.io/github/last-commit/drs1951/CSC510_Group31)
-![total lines](https://img.shields.io/tokei/lines/github/shantanu109/CSC510_Group25_Project1)
-![GitHub branch checks state](https://img.shields.io/github/checks-status/shantanu109/CSC510_Group25_Project1/main)[![Repo-size](https://img.shields.io/github/repo-size/shantanu109/CSC510_Group25_Project1)](https://GitHub.com/shantanu109/CSC510_Group25_Project1/)
-[![file_count](https://img.shields.io/github/directory-file-count/drs1951/CSC510_Group31)](https://GitHub.com/drs1951/CSC510_Group31/)
-[![language_count](https://img.shields.io/github/languages/count/drs1951/CSC510_Group31)](https://GitHub.com/drs1951/CSC510_Group31/)
-[![Top Language](https://img.shields.io/github/languages/top/drs1951/CSC510_Group31)](https://GitHub.com/drs1951/CSC510_Group31/)
-[![Version](https://img.shields.io/github/package-json/v/drs1951/CSC510_Group31)](https://GitHub.com/drs1951/CSC510_Group31/)
+[![Issues](https://img.shields.io/github/issues/MadhurDixit13/86_No_More_FrontEnd)](https://GitHub.com/MadhurDixit13/86_No_More_FrontEnd/)
+[![Issues Closed](https://img.shields.io/github/issues-closed/MadhurDixit13/86_No_More_FrontEnd)](https://GitHub.com/MadhurDixit13/86_No_More_FrontEnd/)
+![last commit](https://img.shields.io/github/last-commit/MadhurDixit13/86_No_More_FrontEnd)
+![total lines](https://img.shields.io/tokei/lines/github/MadhurDixit13/86_No_More_FrontEnd)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/MadhurDixit13/86_No_More_FrontEnd/main)[![Repo-size](https://img.shields.io/github/repo-size/MadhurDixit13/86_No_More_FrontEnd)](https://GitHub.com/MadhurDixit13/86_No_More_FrontEnd/)
+[![file_count](https://img.shields.io/github/directory-file-count/MadhurDixit13/86_No_More_FrontEnd)](https://GitHub.com/MadhurDixit13/86_No_More_FrontEnd/)
+[![language_count](https://img.shields.io/github/languages/count/MadhurDixit13/86_No_More_FrontEnd)](https://GitHub.com/MadhurDixit13/86_No_More_FrontEnd/)
+[![Top Language](https://img.shields.io/github/languages/top/MadhurDixit13/86_No_More_FrontEnd)](https://GitHub.com/MadhurDixit13/86_No_More_FrontEnd/)
+[![Version](https://img.shields.io/github/package-json/v/MadhurDixit13/86_No_More_FrontEnd)](https://GitHub.com/MadhurDixit13/86_No_More_FrontEnd/)
 ![Build Status](https://github.com/ashakhatri007/CSC510_Group25_Project1/workflows/npm-build/badge.svg)
 [![codecov](https://raw.githubusercontent.com/shantanu109/CSC510_Group25_Project1/711b55a047c10fab6bdf3da57b436a0163f475d6/coverage/badge-lines.svg)](https://github.com/shantanu109/CSC510_Group25_Project1/blob/main/coverage/)
 [![unit_tests](https://github.com/ashakhatri007/CSC510_Group25_Project1/actions/workflows/QtyCalcTests.yml/badge.svg)](https://github.com/CSC510-Group-25/CSC510_Group25_Project1/actions/workflows/QtyCalcTests.yml)
@@ -97,6 +97,7 @@ being beneficial to the planet as there will be less waste generated in the rest
 ![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/2RawMaterialAnalysis.png)
 
 ### Profile Page
+
 ![image](https://github.com/MadhurDixit13/86_No_More_FrontEnd/blob/main/assets/Profile.png)
 
 
@@ -202,7 +203,7 @@ The project is not currently funded
 
 ## 🌠 Future
 
-See RoadMap here: [RoadMap](https://github.com/MadhurDixit13/86_No_More_FrontEnd/issues/34)
+See RoadMap here: [RoadMap](https://github.com/MadhurDixit13/86_No_More_FrontEnd/discussions/2)
 
 ## Troubleshooting
 
